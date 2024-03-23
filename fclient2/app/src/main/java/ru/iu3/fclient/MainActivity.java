@@ -128,19 +128,16 @@ public class MainActivity extends AppCompatActivity implements ru.iu3.fclient.Tr
     }
 
 
-    public static byte[] stringToHex(String s)
-    {
+    public static byte[] stringToHex(String s) {
         byte[] hex;
-        try
-        {
+        try {
             hex = Hex.decodeHex(s.toCharArray());
-        }
-        catch (DecoderException ex)
-        {
+        } catch (DecoderException ex) {
             hex = null;
         }
         return hex;
     }
+
 
 
     /**
