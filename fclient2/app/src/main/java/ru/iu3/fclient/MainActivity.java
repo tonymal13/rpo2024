@@ -9,14 +9,21 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import org.apache.commons.codec.DecoderException;
 import org.apache.commons.codec.binary.Hex;
+import org.apache.commons.io.IOUtils;
 
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.nio.charset.StandardCharsets;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import ru.iu3.fclient.databinding.ActivityMainBinding;
 
@@ -107,8 +114,8 @@ public class MainActivity extends AppCompatActivity implements ru.iu3.fclient.Tr
         String s = new String(Hex.encodeHex(dec)).toUpperCase();
         Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
         */
-        byte[] trd = stringToHex("9F0206000000000100");
-        boolean ok = transaction(trd);
+//        byte[] trd = stringToHex("9F0206000000000100");
+//        boolean ok = transaction(trd);
 //        new Thread(()-> {
 //            try {
 //                byte[] trd = stringToHex("9F0206000000000100");
@@ -121,9 +128,12 @@ public class MainActivity extends AppCompatActivity implements ru.iu3.fclient.Tr
 //                // todo: log error
 //            }
 //        }).start();
-        Intent it = new Intent(this, PinpadActivity.class);
-        activityResultLauncher.launch(it);
+
+//        Intent it = new Intent(this, PinpadActivity.class);
+//        activityResultLauncher.launch(it);
         //startActivity(it);
+
+        testHttpClient();
 
     }
 
@@ -138,6 +148,37 @@ public class MainActivity extends AppCompatActivity implements ru.iu3.fclient.Tr
         return hex;
     }
 
+
+    protected void testHttpClient()
+    {
+        new Thread(() -> {
+            try {
+                HttpURLConnection uc = (HttpURLConnection)
+                        (new URL("https://www.wikipedia.org").openConnection());
+                InputStream inputStream = uc.getInputStream();
+                String html = IOUtils.toString(inputStream);
+                String title = getPageTitle(html);
+                runOnUiThread(() ->
+                {
+                    Toast.makeText(this, title, Toast.LENGTH_LONG).show();
+                });
+
+            } catch (Exception ex) {
+                Log.e("fapptag", "Http client fails", ex);
+            }
+        }).start();
+    }
+
+    private String getPageTitle(String html) {
+        Pattern pattern = Pattern.compile("<title>(.+?)</title>", Pattern.DOTALL);
+        Matcher matcher = pattern.matcher(html);
+        String p;
+        if (matcher.find())
+            p = matcher.group(1);
+        else
+            p = "Not found";
+        return p;
+    }
 
 
     /**
