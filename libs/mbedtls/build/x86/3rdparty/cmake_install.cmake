@@ -1,4 +1,4 @@
-# Install script for directory: /home/user/AndroidStudioProjects/libs/mbedtls/mbedtls/3rdparty
+# Install script for directory: /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/3rdparty
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,8 +44,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/user/AndroidStudioProjects/libs/mbedtls/build/x86/3rdparty/everest/cmake_install.cmake")
-  include("/home/user/AndroidStudioProjects/libs/mbedtls/build/x86/3rdparty/p256-m/cmake_install.cmake")
+  include("/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86/3rdparty/everest/cmake_install.cmake")
+  include("/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86/3rdparty/p256-m/cmake_install.cmake")
 
 endif()
 

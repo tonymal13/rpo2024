@@ -1,4 +1,4 @@
-# Install script for directory: /home/user/AndroidStudioProjects/libs/mbedtls/mbedtls/pkgconfig
+# Install script for directory: /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/pkgconfig
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,14 +43,14 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/user/AndroidStudioProjects/libs/mbedtls/build/x86_64/pkgconfig/mbedcrypto.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/pkgconfig/mbedcrypto.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/user/AndroidStudioProjects/libs/mbedtls/build/x86_64/pkgconfig/mbedtls.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/pkgconfig/mbedtls.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/user/AndroidStudioProjects/libs/mbedtls/build/x86_64/pkgconfig/mbedx509.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/pkgconfig/mbedx509.pc")
 endif()
 

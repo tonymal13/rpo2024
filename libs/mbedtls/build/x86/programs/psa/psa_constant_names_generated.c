@@ -49,7 +49,6 @@ static const char *psa_ecc_family_name(psa_ecc_family_t curve)
 static const char *psa_dh_family_name(psa_dh_family_t group)
 {
     switch (group) {
-    case PSA_DH_FAMILY_CUSTOM: return "PSA_DH_FAMILY_CUSTOM";
     case PSA_DH_FAMILY_RFC7919: return "PSA_DH_FAMILY_RFC7919";
     default: return NULL;
     }

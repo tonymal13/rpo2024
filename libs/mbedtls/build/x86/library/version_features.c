@@ -636,6 +636,9 @@ static const char * const features[] = {
 #if defined(MBEDTLS_GCM_C)
     "GCM_C", //no-check-names
 #endif /* MBEDTLS_GCM_C */
+#if defined(MBEDTLS_GCM_LARGE_TABLE)
+    "GCM_LARGE_TABLE", //no-check-names
+#endif /* MBEDTLS_GCM_LARGE_TABLE */
 #if defined(MBEDTLS_HKDF_C)
     "HKDF_C", //no-check-names
 #endif /* MBEDTLS_HKDF_C */

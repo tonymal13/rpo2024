@@ -31,6 +31,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/mbedtls_test.dir/tests/src/helpers.c.o.d"
   "CMakeFiles/mbedtls_test.dir/tests/src/psa_crypto_helpers.c.o"
   "CMakeFiles/mbedtls_test.dir/tests/src/psa_crypto_helpers.c.o.d"
+  "CMakeFiles/mbedtls_test.dir/tests/src/psa_crypto_stubs.c.o"
+  "CMakeFiles/mbedtls_test.dir/tests/src/psa_crypto_stubs.c.o.d"
   "CMakeFiles/mbedtls_test.dir/tests/src/psa_exercise_key.c.o"
   "CMakeFiles/mbedtls_test.dir/tests/src/psa_exercise_key.c.o.d"
   "CMakeFiles/mbedtls_test.dir/tests/src/random.c.o"

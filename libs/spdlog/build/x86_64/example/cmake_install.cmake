@@ -1,4 +1,4 @@
-# Install script for directory: /home/user/AndroidStudioProjects/libs/spdlog/spdlog/example
+# Install script for directory: /home/user/AndroidStudioProjects/rpo2024/libs/spdlog/spdlog/example
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -53,10 +53,10 @@ RM = /home/user/Android/Sdk/cmake/3.22.1/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/AndroidStudioProjects/libs/mbedtls/mbedtls
+CMAKE_SOURCE_DIR = /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/AndroidStudioProjects/libs/mbedtls/build/x86
+CMAKE_BINARY_DIR = /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86
 
 # Utility rule file for generate_psa_constant_names_generated_c.
 
@@ -68,11 +68,11 @@ include programs/psa/CMakeFiles/generate_psa_constant_names_generated_c.dir/prog
 
 programs/psa/CMakeFiles/generate_psa_constant_names_generated_c: programs/psa/psa_constant_names_generated.c
 
-programs/psa/psa_constant_names_generated.c: /home/user/AndroidStudioProjects/libs/mbedtls/mbedtls/scripts/generate_psa_constants.py
-programs/psa/psa_constant_names_generated.c: /home/user/AndroidStudioProjects/libs/mbedtls/mbedtls/include/psa/crypto_values.h
-programs/psa/psa_constant_names_generated.c: /home/user/AndroidStudioProjects/libs/mbedtls/mbedtls/include/psa/crypto_extra.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/AndroidStudioProjects/libs/mbedtls/build/x86/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating psa_constant_names_generated.c"
-	cd /home/user/AndroidStudioProjects/libs/mbedtls/mbedtls && /usr/bin/python3.10 /home/user/AndroidStudioProjects/libs/mbedtls/mbedtls/programs/psa/../../scripts/generate_psa_constants.py /home/user/AndroidStudioProjects/libs/mbedtls/build/x86/programs/psa
+programs/psa/psa_constant_names_generated.c: /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/scripts/generate_psa_constants.py
+programs/psa/psa_constant_names_generated.c: /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/include/psa/crypto_values.h
+programs/psa/psa_constant_names_generated.c: /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/include/psa/crypto_extra.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating psa_constant_names_generated.c"
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls && /usr/bin/python3.10 /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/programs/psa/../../scripts/generate_psa_constants.py /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86/programs/psa
 
 generate_psa_constant_names_generated_c: programs/psa/CMakeFiles/generate_psa_constant_names_generated_c
 generate_psa_constant_names_generated_c: programs/psa/psa_constant_names_generated.c
@@ -84,10 +84,10 @@ programs/psa/CMakeFiles/generate_psa_constant_names_generated_c.dir/build: gener
 .PHONY : programs/psa/CMakeFiles/generate_psa_constant_names_generated_c.dir/build
 
 programs/psa/CMakeFiles/generate_psa_constant_names_generated_c.dir/clean:
-	cd /home/user/AndroidStudioProjects/libs/mbedtls/build/x86/programs/psa && $(CMAKE_COMMAND) -P CMakeFiles/generate_psa_constant_names_generated_c.dir/cmake_clean.cmake
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86/programs/psa && $(CMAKE_COMMAND) -P CMakeFiles/generate_psa_constant_names_generated_c.dir/cmake_clean.cmake
 .PHONY : programs/psa/CMakeFiles/generate_psa_constant_names_generated_c.dir/clean
 
 programs/psa/CMakeFiles/generate_psa_constant_names_generated_c.dir/depend:
-	cd /home/user/AndroidStudioProjects/libs/mbedtls/build/x86 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/AndroidStudioProjects/libs/mbedtls/mbedtls /home/user/AndroidStudioProjects/libs/mbedtls/mbedtls/programs/psa /home/user/AndroidStudioProjects/libs/mbedtls/build/x86 /home/user/AndroidStudioProjects/libs/mbedtls/build/x86/programs/psa /home/user/AndroidStudioProjects/libs/mbedtls/build/x86/programs/psa/CMakeFiles/generate_psa_constant_names_generated_c.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/programs/psa /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86 /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86/programs/psa /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86/programs/psa/CMakeFiles/generate_psa_constant_names_generated_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : programs/psa/CMakeFiles/generate_psa_constant_names_generated_c.dir/depend
 

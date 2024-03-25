@@ -172,6 +172,22 @@ const char *mbedtls_ssl_states_str( mbedtls_ssl_states in )
     }
 }
 
+#if defined(MBEDTLS_SSL_EARLY_DATA) && defined(MBEDTLS_SSL_CLI_C)
+const char *mbedtls_ssl_early_data_status_str( mbedtls_ssl_early_data_status in )
+{
+    switch (in) {
+        case MBEDTLS_SSL_EARLY_DATA_STATUS_NOT_INDICATED:
+            return "MBEDTLS_SSL_EARLY_DATA_STATUS_NOT_INDICATED";
+        case MBEDTLS_SSL_EARLY_DATA_STATUS_ACCEPTED:
+            return "MBEDTLS_SSL_EARLY_DATA_STATUS_ACCEPTED";
+        case MBEDTLS_SSL_EARLY_DATA_STATUS_REJECTED:
+            return "MBEDTLS_SSL_EARLY_DATA_STATUS_REJECTED";
+        default:
+            return "UNKNOWN_VALUE";
+    }
+}
+
+#endif /* defined(MBEDTLS_SSL_EARLY_DATA) && defined(MBEDTLS_SSL_CLI_C) */
 const char *mbedtls_ssl_protocol_version_str( mbedtls_ssl_protocol_version in )
 {
     switch (in) {

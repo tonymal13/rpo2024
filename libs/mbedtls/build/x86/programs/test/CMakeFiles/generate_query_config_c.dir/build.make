@@ -53,10 +53,10 @@ RM = /home/user/Android/Sdk/cmake/3.22.1/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/AndroidStudioProjects/libs/mbedtls/mbedtls
+CMAKE_SOURCE_DIR = /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/AndroidStudioProjects/libs/mbedtls/build/x86
+CMAKE_BINARY_DIR = /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86
 
 # Utility rule file for generate_query_config_c.
 
@@ -68,12 +68,12 @@ include programs/test/CMakeFiles/generate_query_config_c.dir/progress.make
 
 programs/test/CMakeFiles/generate_query_config_c: programs/test/query_config.c
 
-programs/test/query_config.c: /home/user/AndroidStudioProjects/libs/mbedtls/mbedtls/scripts/generate_query_config.pl
-programs/test/query_config.c: /home/user/AndroidStudioProjects/libs/mbedtls/mbedtls/include/mbedtls/mbedtls_config.h
-programs/test/query_config.c: /home/user/AndroidStudioProjects/libs/mbedtls/mbedtls/include/psa/crypto_config.h
-programs/test/query_config.c: /home/user/AndroidStudioProjects/libs/mbedtls/mbedtls/scripts/data_files/query_config.fmt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/AndroidStudioProjects/libs/mbedtls/build/x86/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating query_config.c"
-	cd /home/user/AndroidStudioProjects/libs/mbedtls/build/x86/programs/test && /usr/bin/perl /home/user/AndroidStudioProjects/libs/mbedtls/mbedtls/programs/test/../../scripts/generate_query_config.pl /home/user/AndroidStudioProjects/libs/mbedtls/mbedtls/programs/test/../../include/mbedtls/mbedtls_config.h /home/user/AndroidStudioProjects/libs/mbedtls/mbedtls/programs/test/../../include/psa/crypto_config.h /home/user/AndroidStudioProjects/libs/mbedtls/mbedtls/programs/test/../../scripts/data_files/query_config.fmt /home/user/AndroidStudioProjects/libs/mbedtls/build/x86/programs/test/query_config.c
+programs/test/query_config.c: /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/scripts/generate_query_config.pl
+programs/test/query_config.c: /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/include/mbedtls/mbedtls_config.h
+programs/test/query_config.c: /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/include/psa/crypto_config.h
+programs/test/query_config.c: /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/scripts/data_files/query_config.fmt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating query_config.c"
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86/programs/test && /usr/bin/perl /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/programs/test/../../scripts/generate_query_config.pl /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/programs/test/../../include/mbedtls/mbedtls_config.h /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/programs/test/../../include/psa/crypto_config.h /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/programs/test/../../scripts/data_files/query_config.fmt /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86/programs/test/query_config.c
 
 generate_query_config_c: programs/test/CMakeFiles/generate_query_config_c
 generate_query_config_c: programs/test/query_config.c
@@ -85,10 +85,10 @@ programs/test/CMakeFiles/generate_query_config_c.dir/build: generate_query_confi
 .PHONY : programs/test/CMakeFiles/generate_query_config_c.dir/build
 
 programs/test/CMakeFiles/generate_query_config_c.dir/clean:
-	cd /home/user/AndroidStudioProjects/libs/mbedtls/build/x86/programs/test && $(CMAKE_COMMAND) -P CMakeFiles/generate_query_config_c.dir/cmake_clean.cmake
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86/programs/test && $(CMAKE_COMMAND) -P CMakeFiles/generate_query_config_c.dir/cmake_clean.cmake
 .PHONY : programs/test/CMakeFiles/generate_query_config_c.dir/clean
 
 programs/test/CMakeFiles/generate_query_config_c.dir/depend:
-	cd /home/user/AndroidStudioProjects/libs/mbedtls/build/x86 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/AndroidStudioProjects/libs/mbedtls/mbedtls /home/user/AndroidStudioProjects/libs/mbedtls/mbedtls/programs/test /home/user/AndroidStudioProjects/libs/mbedtls/build/x86 /home/user/AndroidStudioProjects/libs/mbedtls/build/x86/programs/test /home/user/AndroidStudioProjects/libs/mbedtls/build/x86/programs/test/CMakeFiles/generate_query_config_c.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/programs/test /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86 /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86/programs/test /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86/programs/test/CMakeFiles/generate_query_config_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : programs/test/CMakeFiles/generate_query_config_c.dir/depend
 

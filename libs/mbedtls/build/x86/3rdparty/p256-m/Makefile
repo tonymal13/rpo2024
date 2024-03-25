@@ -57,10 +57,10 @@ RM = /home/user/Android/Sdk/cmake/3.22.1/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/AndroidStudioProjects/libs/mbedtls/mbedtls
+CMAKE_SOURCE_DIR = /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/AndroidStudioProjects/libs/mbedtls/build/x86
+CMAKE_BINARY_DIR = /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/user/AndroidStudioProjects/libs/mbedtls/build/x86 && $(CMAKE_COMMAND) -E cmake_progress_start /home/user/AndroidStudioProjects/libs/mbedtls/build/x86/CMakeFiles /home/user/AndroidStudioProjects/libs/mbedtls/build/x86/3rdparty/p256-m//CMakeFiles/progress.marks
-	cd /home/user/AndroidStudioProjects/libs/mbedtls/build/x86 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 3rdparty/p256-m/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/AndroidStudioProjects/libs/mbedtls/build/x86/CMakeFiles 0
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86 && $(CMAKE_COMMAND) -E cmake_progress_start /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86/CMakeFiles /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86/3rdparty/p256-m//CMakeFiles/progress.marks
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 3rdparty/p256-m/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/user/AndroidStudioProjects/libs/mbedtls/build/x86 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 3rdparty/p256-m/clean
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 3rdparty/p256-m/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/user/AndroidStudioProjects/libs/mbedtls/build/x86 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 3rdparty/p256-m/preinstall
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 3rdparty/p256-m/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/user/AndroidStudioProjects/libs/mbedtls/build/x86 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 3rdparty/p256-m/preinstall
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 3rdparty/p256-m/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/user/AndroidStudioProjects/libs/mbedtls/build/x86 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 3rdparty/p256-m/CMakeFiles/p256m.dir/rule:
-	cd /home/user/AndroidStudioProjects/libs/mbedtls/build/x86 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 3rdparty/p256-m/CMakeFiles/p256m.dir/rule
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 3rdparty/p256-m/CMakeFiles/p256m.dir/rule
 .PHONY : 3rdparty/p256-m/CMakeFiles/p256m.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ p256m: 3rdparty/p256-m/CMakeFiles/p256m.dir/rule
 
 # fast build rule for target.
 p256m/fast:
-	cd /home/user/AndroidStudioProjects/libs/mbedtls/build/x86 && $(MAKE) $(MAKESILENT) -f 3rdparty/p256-m/CMakeFiles/p256m.dir/build.make 3rdparty/p256-m/CMakeFiles/p256m.dir/build
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86 && $(MAKE) $(MAKESILENT) -f 3rdparty/p256-m/CMakeFiles/p256m.dir/build.make 3rdparty/p256-m/CMakeFiles/p256m.dir/build
 .PHONY : p256m/fast
 
 p256-m/p256-m.o: p256-m/p256-m.c.o
@@ -180,7 +180,7 @@ p256-m/p256-m.o: p256-m/p256-m.c.o
 
 # target to build an object file
 p256-m/p256-m.c.o:
-	cd /home/user/AndroidStudioProjects/libs/mbedtls/build/x86 && $(MAKE) $(MAKESILENT) -f 3rdparty/p256-m/CMakeFiles/p256m.dir/build.make 3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m/p256-m.c.o
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86 && $(MAKE) $(MAKESILENT) -f 3rdparty/p256-m/CMakeFiles/p256m.dir/build.make 3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m/p256-m.c.o
 .PHONY : p256-m/p256-m.c.o
 
 p256-m/p256-m.i: p256-m/p256-m.c.i
@@ -188,7 +188,7 @@ p256-m/p256-m.i: p256-m/p256-m.c.i
 
 # target to preprocess a source file
 p256-m/p256-m.c.i:
-	cd /home/user/AndroidStudioProjects/libs/mbedtls/build/x86 && $(MAKE) $(MAKESILENT) -f 3rdparty/p256-m/CMakeFiles/p256m.dir/build.make 3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m/p256-m.c.i
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86 && $(MAKE) $(MAKESILENT) -f 3rdparty/p256-m/CMakeFiles/p256m.dir/build.make 3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m/p256-m.c.i
 .PHONY : p256-m/p256-m.c.i
 
 p256-m/p256-m.s: p256-m/p256-m.c.s
@@ -196,7 +196,7 @@ p256-m/p256-m.s: p256-m/p256-m.c.s
 
 # target to generate assembly for a file
 p256-m/p256-m.c.s:
-	cd /home/user/AndroidStudioProjects/libs/mbedtls/build/x86 && $(MAKE) $(MAKESILENT) -f 3rdparty/p256-m/CMakeFiles/p256m.dir/build.make 3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m/p256-m.c.s
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86 && $(MAKE) $(MAKESILENT) -f 3rdparty/p256-m/CMakeFiles/p256m.dir/build.make 3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m/p256-m.c.s
 .PHONY : p256-m/p256-m.c.s
 
 p256-m_driver_entrypoints.o: p256-m_driver_entrypoints.c.o
@@ -204,7 +204,7 @@ p256-m_driver_entrypoints.o: p256-m_driver_entrypoints.c.o
 
 # target to build an object file
 p256-m_driver_entrypoints.c.o:
-	cd /home/user/AndroidStudioProjects/libs/mbedtls/build/x86 && $(MAKE) $(MAKESILENT) -f 3rdparty/p256-m/CMakeFiles/p256m.dir/build.make 3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m_driver_entrypoints.c.o
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86 && $(MAKE) $(MAKESILENT) -f 3rdparty/p256-m/CMakeFiles/p256m.dir/build.make 3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m_driver_entrypoints.c.o
 .PHONY : p256-m_driver_entrypoints.c.o
 
 p256-m_driver_entrypoints.i: p256-m_driver_entrypoints.c.i
@@ -212,7 +212,7 @@ p256-m_driver_entrypoints.i: p256-m_driver_entrypoints.c.i
 
 # target to preprocess a source file
 p256-m_driver_entrypoints.c.i:
-	cd /home/user/AndroidStudioProjects/libs/mbedtls/build/x86 && $(MAKE) $(MAKESILENT) -f 3rdparty/p256-m/CMakeFiles/p256m.dir/build.make 3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m_driver_entrypoints.c.i
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86 && $(MAKE) $(MAKESILENT) -f 3rdparty/p256-m/CMakeFiles/p256m.dir/build.make 3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m_driver_entrypoints.c.i
 .PHONY : p256-m_driver_entrypoints.c.i
 
 p256-m_driver_entrypoints.s: p256-m_driver_entrypoints.c.s
@@ -220,7 +220,7 @@ p256-m_driver_entrypoints.s: p256-m_driver_entrypoints.c.s
 
 # target to generate assembly for a file
 p256-m_driver_entrypoints.c.s:
-	cd /home/user/AndroidStudioProjects/libs/mbedtls/build/x86 && $(MAKE) $(MAKESILENT) -f 3rdparty/p256-m/CMakeFiles/p256m.dir/build.make 3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m_driver_entrypoints.c.s
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86 && $(MAKE) $(MAKESILENT) -f 3rdparty/p256-m/CMakeFiles/p256m.dir/build.make 3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m_driver_entrypoints.c.s
 .PHONY : p256-m_driver_entrypoints.c.s
 
 # Help Target
@@ -253,6 +253,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/user/AndroidStudioProjects/libs/mbedtls/build/x86 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

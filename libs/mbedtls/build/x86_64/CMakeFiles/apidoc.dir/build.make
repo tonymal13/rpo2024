@@ -53,10 +53,10 @@ RM = /home/user/Android/Sdk/cmake/3.22.1/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/AndroidStudioProjects/libs/mbedtls/mbedtls
+CMAKE_SOURCE_DIR = /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/AndroidStudioProjects/libs/mbedtls/build/x86_64
+CMAKE_BINARY_DIR = /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64
 
 # Utility rule file for apidoc.
 
@@ -67,7 +67,7 @@ include CMakeFiles/apidoc.dir/compiler_depend.make
 include CMakeFiles/apidoc.dir/progress.make
 
 CMakeFiles/apidoc:
-	cd /home/user/AndroidStudioProjects/libs/mbedtls/mbedtls/doxygen && doxygen mbedtls.doxyfile
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/doxygen && doxygen mbedtls.doxyfile
 
 apidoc: CMakeFiles/apidoc
 apidoc: CMakeFiles/apidoc.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/apidoc.dir/clean:
 .PHONY : CMakeFiles/apidoc.dir/clean
 
 CMakeFiles/apidoc.dir/depend:
-	cd /home/user/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/AndroidStudioProjects/libs/mbedtls/mbedtls /home/user/AndroidStudioProjects/libs/mbedtls/mbedtls /home/user/AndroidStudioProjects/libs/mbedtls/build/x86_64 /home/user/AndroidStudioProjects/libs/mbedtls/build/x86_64 /home/user/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles/apidoc.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/CMakeFiles/apidoc.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/apidoc.dir/depend
 

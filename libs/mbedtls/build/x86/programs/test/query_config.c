@@ -1772,6 +1772,14 @@ int query_config(const char *config)
     }
 #endif /* MBEDTLS_GCM_C */
 
+#if defined(MBEDTLS_GCM_LARGE_TABLE)
+    if( strcmp( "MBEDTLS_GCM_LARGE_TABLE", config ) == 0 )
+    {
+        MACRO_EXPANSION_TO_STR( MBEDTLS_GCM_LARGE_TABLE );
+        return( 0 );
+    }
+#endif /* MBEDTLS_GCM_LARGE_TABLE */
+
 #if defined(MBEDTLS_HKDF_C)
     if( strcmp( "MBEDTLS_HKDF_C", config ) == 0 )
     {
@@ -4353,6 +4361,10 @@ void list_config(void)
 #if defined(MBEDTLS_GCM_C)
     OUTPUT_MACRO_NAME_VALUE(MBEDTLS_GCM_C);
 #endif /* MBEDTLS_GCM_C */
+
+#if defined(MBEDTLS_GCM_LARGE_TABLE)
+    OUTPUT_MACRO_NAME_VALUE(MBEDTLS_GCM_LARGE_TABLE);
+#endif /* MBEDTLS_GCM_LARGE_TABLE */
 
 #if defined(MBEDTLS_HKDF_C)
     OUTPUT_MACRO_NAME_VALUE(MBEDTLS_HKDF_C);

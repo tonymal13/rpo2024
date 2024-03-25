@@ -57,10 +57,10 @@ RM = /home/user/Android/Sdk/cmake/3.22.1/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/AndroidStudioProjects/libs/mbedtls/mbedtls
+CMAKE_SOURCE_DIR = /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/AndroidStudioProjects/libs/mbedtls/build/x86
+CMAKE_BINARY_DIR = /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/AndroidStudioProjects/libs/mbedtls/build/x86/CMakeFiles /home/user/AndroidStudioProjects/libs/mbedtls/build/x86//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86/CMakeFiles /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/AndroidStudioProjects/libs/mbedtls/build/x86/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -1637,6 +1637,30 @@ tests/src/psa_crypto_helpers.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mbedtls_test.dir/build.make CMakeFiles/mbedtls_test.dir/tests/src/psa_crypto_helpers.c.s
 .PHONY : tests/src/psa_crypto_helpers.c.s
 
+tests/src/psa_crypto_stubs.o: tests/src/psa_crypto_stubs.c.o
+.PHONY : tests/src/psa_crypto_stubs.o
+
+# target to build an object file
+tests/src/psa_crypto_stubs.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mbedtls_test.dir/build.make CMakeFiles/mbedtls_test.dir/tests/src/psa_crypto_stubs.c.o
+.PHONY : tests/src/psa_crypto_stubs.c.o
+
+tests/src/psa_crypto_stubs.i: tests/src/psa_crypto_stubs.c.i
+.PHONY : tests/src/psa_crypto_stubs.i
+
+# target to preprocess a source file
+tests/src/psa_crypto_stubs.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mbedtls_test.dir/build.make CMakeFiles/mbedtls_test.dir/tests/src/psa_crypto_stubs.c.i
+.PHONY : tests/src/psa_crypto_stubs.c.i
+
+tests/src/psa_crypto_stubs.s: tests/src/psa_crypto_stubs.c.s
+.PHONY : tests/src/psa_crypto_stubs.s
+
+# target to generate assembly for a file
+tests/src/psa_crypto_stubs.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mbedtls_test.dir/build.make CMakeFiles/mbedtls_test.dir/tests/src/psa_crypto_stubs.c.s
+.PHONY : tests/src/psa_crypto_stubs.c.s
+
 tests/src/psa_exercise_key.o: tests/src/psa_exercise_key.c.o
 .PHONY : tests/src/psa_exercise_key.o
 
@@ -1877,6 +1901,9 @@ help:
 	@echo "... tests/src/psa_crypto_helpers.o"
 	@echo "... tests/src/psa_crypto_helpers.i"
 	@echo "... tests/src/psa_crypto_helpers.s"
+	@echo "... tests/src/psa_crypto_stubs.o"
+	@echo "... tests/src/psa_crypto_stubs.i"
+	@echo "... tests/src/psa_crypto_stubs.s"
 	@echo "... tests/src/psa_exercise_key.o"
 	@echo "... tests/src/psa_exercise_key.i"
 	@echo "... tests/src/psa_exercise_key.s"

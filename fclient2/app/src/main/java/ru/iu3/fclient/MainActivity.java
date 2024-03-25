@@ -154,7 +154,7 @@ public class MainActivity extends AppCompatActivity implements ru.iu3.fclient.Tr
         new Thread(() -> {
             try {
                 HttpURLConnection uc = (HttpURLConnection)
-                        (new URL("https://www.wikipedia.org").openConnection());
+                        (new URL("http://10.0.2.2:8081/api/v1/title").openConnection());
                 InputStream inputStream = uc.getInputStream();
                 String html = IOUtils.toString(inputStream);
                 String title = getPageTitle(html);

@@ -89,6 +89,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/mbedcrypto_static.dir/pem.c.o.d"
   "CMakeFiles/mbedcrypto_static.dir/pk.c.o"
   "CMakeFiles/mbedcrypto_static.dir/pk.c.o.d"
+  "CMakeFiles/mbedcrypto_static.dir/pk_ecc.c.o"
+  "CMakeFiles/mbedcrypto_static.dir/pk_ecc.c.o.d"
   "CMakeFiles/mbedcrypto_static.dir/pk_wrap.c.o"
   "CMakeFiles/mbedcrypto_static.dir/pk_wrap.c.o.d"
   "CMakeFiles/mbedcrypto_static.dir/pkcs12.c.o"
