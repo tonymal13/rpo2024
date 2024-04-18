@@ -4,16 +4,25 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faHome, faUser} from '@fortawesome/free-solid-svg-icons'
 import {Link, useNavigate} from 'react-router-dom';
 import Utils from "../utils/Utils";
+import BackendService from "../services/BackendService";
 
 class NavigationBarClass extends React.Component {
 
     constructor(props) {
         super(props);
         this.goHome = this.goHome.bind(this);
+        this.logout = this.logout.bind(this)
+    }
+
+    logout() {
+        BackendService.logout().then(() => {
+            Utils.removeUser();
+            this.goHome()
+        });
     }
 
     goHome() {
-        this.props.navigate('Home');
+        this.props.navigate('home');
     }
 
     render() {
@@ -26,7 +35,6 @@ class NavigationBarClass extends React.Component {
                     <Nav className="me-auto">
                         <Nav.Link as={Link} to="/home">Home</Nav.Link>
                         <Nav.Link onClick={this.goHome}>Another Home</Nav.Link>
-                        <Nav.Link onClick={() =>{ this.props.navigate("\home")}}>Yet Another Home</Nav.Link>
                     </Nav>
                     <Navbar.Text>{uname}</Navbar.Text>
                     { uname &&
