@@ -9,11 +9,15 @@ import Utils from "./utils/Utils";
 import {connect} from "react-redux";
 import SideBar from "./components/SideBar";
 import CountryListComponent from "./componentsList/CountryListComponent";
+import CountryComponent from "./entities/CountryComponent";
+
 
 const ProtectedRoute = ({children}) => {
     let user = Utils.getUser();
     return user ? children : <Navigate to={'/login'} />
 };
+
+
 
 
 const App = props => {
@@ -32,7 +36,8 @@ const App = props => {
                             <Route path="login" element={<Login />}/>
                             <Route path="home" element={<ProtectedRoute><Home/></ProtectedRoute>}/>
                             <Route path="countries" element={<ProtectedRoute><CountryListComponent/></ProtectedRoute>}/>
-                            {/*<Route path="countries/:id" element={<ProtectedRoute><CountryComponent /></ProtectedRoute>}/>*/}
+                            <Route path="countries/:id" element={<ProtectedRoute><CountryComponent /></ProtectedRoute>}/>
+
                         </Routes>
                     </div>
                 </div>

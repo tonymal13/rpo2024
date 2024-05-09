@@ -1,10 +1,11 @@
+
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrash, faEdit, faPlus } from '@fortawesome/free-solid-svg-icons'
 import Alert from "../utils/Alert";
 import BackendService from "../services/BackendService";
 import { useNavigate } from 'react-router-dom';
-import PaginationComponent from "../entities/PaginationComponent";
+import PaginationComponent from '../entities/PaginationComponent';
 
 const CountryListComponent = props => {
 
@@ -15,15 +16,8 @@ const CountryListComponent = props => {
     const [checkedItems, setCheckedItems] = useState([]);
     const [hidden, setHidden] = useState(false);
     const navigate = useNavigate();
-    const [page, setPage] = useState(0);
-    const [totalCount, setTotalCount] = useState(0);
-    const limit = 10;
 
-    const onPageChanged = cp => {
-        refreshCountries(cp - 1)
-    }
-
-    const setChecked = v => {
+    const setChecked = v =>  {
         setCheckedItems(Array(countries.length).fill(v));
     }
 
@@ -43,7 +37,7 @@ const CountryListComponent = props => {
 
     const deleteCountriesClicked = () => {
         let x = [];
-        countries.map((t, idx) => {
+        countries.map ((t, idx) => {
             if (checkedItems[idx]) {
                 x.push(t)
             }
@@ -54,7 +48,7 @@ const CountryListComponent = props => {
             if (x.length > 1) {
                 msg = "Пожалуйста подтвердите удаление " + x.length + " стран";
             }
-            else {
+            else  {
                 msg = "Пожалуйста подтвердите удаление страны " + x[0].name;
             }
             setShowAlert(true);
@@ -63,31 +57,31 @@ const CountryListComponent = props => {
         }
     }
 
-    const refreshCountries = cp => {
-        BackendService.retrieveAllCountries(cp, limit)
+    const refreshCountries = () => {
+        BackendService.retrieveAllCountries()
             .then(
                 resp => {
-                    setCountries(resp.data.content);
+                    setCountries(resp.data);
                     setHidden(false);
-                    setTotalCount(resp.data.totalElements);
-                    setPage(cp);
                 }
             )
-            .catch(() => {
-                setHidden(true);
-                setTotalCount(0);
-            })
-            .finally(() => setChecked(false))
+            .catch(()=> { setHidden(true )})
+            .finally(()=> setChecked(false))
     }
+
+    useEffect(() => {
+        refreshCountries();
+    }, [])
 
     const updateCountryClicked = id => {
         navigate(`/countries/${id}`)
     }
 
-    const onDelete = () => {
+    const onDelete = () =>  {
         BackendService.deleteCountries(selectedCountries)
-            .then(() => refreshCountries(page))
-            .catch(() => { })
+            .then( () => refreshCountries())
+            .catch(()=>{}
+            )
     }
 
     const closeAlert = () => {
@@ -120,12 +114,6 @@ const CountryListComponent = props => {
                 </div>
             </div>
             <div className="row my-2 me-0">
-                <PaginationComponent
-                    totalRecords={totalCount}
-                    pageLimit={limit}
-                    pageNeighbours={1}
-                    currentPage={page}
-                    onPageChanged={onPageChanged} />
                 <table className="table table-sm">
                     <thead className="thead-light">
                     <tr>
@@ -155,8 +143,8 @@ const CountryListComponent = props => {
                                         </div>
                                         <div className="btn-group  ms-2  mt-1">
                                             <input type="checkbox" name={index}
-                                                   checked={checkedItems.length > index ? checkedItems[index] : false}
-                                                   onChange={handleCheckChange} />
+                                                   checked={checkedItems.length> index ?  checkedItems[index] : false}
+                                                   onChange={handleCheckChange}/>
                                         </div>
                                     </div>
                                 </td>
